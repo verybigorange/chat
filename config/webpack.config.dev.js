@@ -84,13 +84,10 @@ module.exports = {
     // for React Native Web.
     extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
-      'assets':path.join(__dirname,'../src/assets'),
-      'components':path.join(__dirname,'../src/components'),
-      'utils':path.join(__dirname,'../src/utils'),
-      'store':path.join(__dirname,'../src/store'),
-      // Support React Native Web
-      // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
-      'react-native': 'react-native-web',
+      'assets':path.join(__dirname,'../src/assets'), //静态资源
+      'components':path.join(__dirname,'../src/components'), //功能组件
+      'utils':path.join(__dirname,'../src/utils'), //工具方法
+      'store':path.join(__dirname,'../src/store'), //redux
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).
