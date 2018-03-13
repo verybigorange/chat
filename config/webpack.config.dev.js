@@ -88,6 +88,7 @@ module.exports = {
       'components':path.join(__dirname,'../src/components'), //功能组件
       'utils':path.join(__dirname,'../src/utils'), //工具方法
       'store':path.join(__dirname,'../src/store'), //redux
+      'views':path.join(__dirname,'../src/views') //视图
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).

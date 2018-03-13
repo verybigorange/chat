@@ -6,6 +6,6 @@ export const add_state = ()=>{
             dispatch({
                 type:ADD
             })
-        },1000)
+        },3000)
     }
 }
