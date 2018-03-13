@@ -16,4 +16,15 @@
       'store':path.join(__dirname,'../src/store'), //redux
     },
 
-    
+另外在 package.json 中配置了跨域代理，方便开发时前后端分离。
+
+    "proxy": {
+        "/api": {
+            "target": "http://localhost:8080",
+            "changeOrigin": true,
+            "pathRewrite": {
+            "^/api": ""
+            }
+        }
+    }
+
