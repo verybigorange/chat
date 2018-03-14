@@ -3,10 +3,14 @@
 ### 前端技术栈：react+redux+immutable.js+Material-Ui ###
 ### 后端技术栈：koa2+mysql ###
 
-    npm start               项目启动
+    npm start               前端项目启动
+
+    npm service             后端服务启动
     
     npm run build           项目打包
     
+*tips:本地开发，先 npm run server 启动后端服务，再 npm start 启动前端项目。*
+
 基础架构是由 [*create-react-app*](https://github.com/facebook/create-react-app/) 工具生成，在 config/webpack.config.dev.js 中配置了别名（alias）,方便路径引用
 
      alias: {
