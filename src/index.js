@@ -5,13 +5,13 @@ import registerServiceWorker from './registerServiceWorker';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Provider } from 'react-redux';
 import store from './store'
-import RouterConfig from './router';
+import App from './App';
 
 ReactDOM.render
 // eslint-disable-next-line
 (<Provider store={store}>
     <MuiThemeProvider>
-        <RouterConfig />
+        <App />
     </MuiThemeProvider>
 </Provider>
 , document.getElementById('root'));
