@@ -18,6 +18,7 @@ function userInfo(state={isLogin:false,nike:'',photoUrl:''},action){
         default:
             return state
     }
+    
 }
 
 export default {

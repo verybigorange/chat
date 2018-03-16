@@ -12,8 +12,9 @@ class App extends Component {
              <BrowserRouter>
                 <div>           
                     <Switch>
-                        <AuthRouter />
-                        <Redirect to="/"></Redirect>
+                            <AuthRouter path="/dashbord" component={DashBoard}/>
+                            <Route to="/login" component={Login}></Route>
+                            <Redirect to="/dashbord"></Redirect>
                     </Switch>
                 </div>
              </BrowserRouter>
