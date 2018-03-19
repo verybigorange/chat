@@ -1,8 +1,10 @@
 import React,{ Component } from 'react';
 import { connect } from "react-redux";
 import { loginOut } from "store/login/action"
+import Auth from 'utils/Auth'
 
-@connect(()=>{},{
+@Auth
+@connect(()=>({}),{
     loginOut
 })
 class DashBoard extends Component{
