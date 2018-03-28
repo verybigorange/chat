@@ -9,7 +9,7 @@ class App extends Component {
     return (
         <div className="app">
              <BrowserRouter>
-                <div>           
+                <div style={{height:'100%',width:'100%'}}>           
                     <Switch>
                             <Route path="/dashbord" component={DashBoard}/>
                             <Route path="/login" component={Login}></Route>
