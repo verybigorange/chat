@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter,Switch,Route,Redirect } from 'react-router-dom'
 import DashBoard from './views/DashBoard';
 import Login from './views/Login';
+import Register from './views/Register';
 import Loading from 'components/Loading';
 import { connect } from 'react-redux';
 
@@ -15,6 +16,7 @@ class App extends Component {
                     <Switch>
                             <Route path="/dashbord" component={DashBoard}/>
                             <Route path="/login" component={Login}></Route>
+                            <Route path="/register" component={Register}></Route>
                             <Redirect to="/dashbord"></Redirect>
                     </Switch>
                 </div>
