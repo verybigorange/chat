@@ -4,7 +4,7 @@ var pool =  mysql.createPool({
   host : "localhost",
   user : "root",
   password: "123456",
-  database: 'admin',
+  database: 'chat',
   port: 3306
 });
 
